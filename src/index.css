@@ -35,6 +35,8 @@
   /* handle hover behavior */
 .group:hover > .group-hover\:visible {
 	visibility: visible;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out;
   }
   
   /* slight delay to prevent accidental mouseout */
@@ -46,5 +48,7 @@
   .group > div:hover {
 	opacity: 1 !important;
 	visibility: visible !important;
+	transition: opacity 0.3s ease-in-out;
+	z-index: 10;
   }
   

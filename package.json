@@ -1,6 +1,7 @@
 {
-	"name": "evault-web",
-	"version": "0.1.0",
+	"homepage": "https://lycan-xx.github.io/landing/",
+	"name": "landing-page",
+	"version": "0.1.2",
 	"private": true,
 	"dependencies": {
 		"autoprefixer": "^10.4.20",
@@ -49,5 +50,16 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"description": "This is a React-based web application built with npm. Tailwind CSS is used for styling, and the code is written in JSX for easier modification.",
+	"main": "postcss.config.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Lycan-Xx/landing.git"
+	},
+	"author": "Moh'd",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Lycan-Xx/landing/issues"
 	}
 }

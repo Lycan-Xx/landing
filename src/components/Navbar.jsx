@@ -19,9 +19,15 @@ const Navbar = ({ language, setLanguage }) => {
 
   // Define services if needed
   const services = [
-    { name: 'Service 1', link: '#service1' },
-    { name: 'Service 2', link: '#service2' },
-    // Add more services as needed
+    { name: 'Data Bundles', link: '#services' },
+    { name: 'School Fees Payment', link: '#services' },
+    { name: 'Business Portfolio', link: '#services' },
+    { name: 'Airtime Recharge', link: '#services' },
+    { name: 'Electricity Bills', link: '#services' },
+    { name: 'Remita Payments', link: '#services' },
+    { name: 'Cable TV', link: '#services' },
+    { name: 'Virtual Cards', link: '#services' },
+    { name: 'Funds Transfer', link: '#services' }
   ];
 
   // Language switch handler
@@ -63,18 +69,18 @@ const Navbar = ({ language, setLanguage }) => {
               >
                 Services
 				<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#025798] transition-all group-hover:w-full"></span>
-                <ChevronDown className="ml-1 w-5 h-5" />
+                <ChevronDown className="ml-1 w-5 h-5 transition-transform duration-300 group-hover:rotate-180" />
               </button>
               <div 
-                className="absolute left-0 mt-2 w-64 bg-white text-gray-700 shadow-lg rounded-lg z-10 opacity-0 invisible 
+                className="absolute left-0 mt-2 w-64 bg-white text-[#08448c] shadow-lg rounded-lg z-10 opacity-0 invisible 
                 group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top"
               >
-                <div className="py-2">
+                <div className="py-4">
                   {services.map((service, index) => (
                     <button
                       key={service.id}
                       onClick={() => scrollToSection(service.id)}
-                      className={`block w-full text-left px-4 py-2 hover:bg-[#025798] hover:text-white transition-colors duration-200
+                      className={`block w-full text-left px-4 py-3 hover:bg-[#025798] hover:text-white transition-colors duration-200
                         ${index === 0 ? "rounded-t-lg" : ""} 
                         ${index === services.length - 1 ? "rounded-b-lg" : ""}`}
                     >
