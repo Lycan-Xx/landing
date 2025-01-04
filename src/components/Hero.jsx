@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import heroImage from "../assets/hero-page.jpg";
 
 const Hero = ({ language, setShowPlatform, setPlatformInitialView }) => {
 
@@ -66,7 +67,7 @@ const Hero = ({ language, setShowPlatform, setPlatformInitialView }) => {
           {/* Right Image */}
           <div className="relative">
             <img
-              src="https://picsum.photos/seed/fintech/800/600"
+              src={heroImage}
               alt="Financial Platform"
               className="rounded-lg shadow-xl"
             />

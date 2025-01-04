@@ -19,15 +19,15 @@ const Navbar = ({ language, setLanguage }) => {
 
   // Define services if needed
   const services = [
-    { name: 'Data Bundles', link: '#services' },
-    { name: 'School Fees Payment', link: '#services' },
-    { name: 'Business Portfolio', link: '#services' },
-    { name: 'Airtime Recharge', link: '#services' },
-    { name: 'Electricity Bills', link: '#services' },
-    { name: 'Remita Payments', link: '#services' },
-    { name: 'Cable TV', link: '#services' },
-    { name: 'Virtual Cards', link: '#services' },
-    { name: 'Funds Transfer', link: '#services' }
+    { id: 'data-bundles', title: 'Data Bundles', link: '#services' },
+    { id: 'school-fees', title: 'School Fees Payment', link: '#services' },
+    { id: 'business', title: 'Business Portfolio', link: '#services' },
+    { id: 'airtime', title: 'Airtime Recharge', link: '#services' },
+    { id: 'electricity', title: 'Electricity Bills', link: '#services' },
+    { id: 'remita', title: 'Remita Payments', link: '#services' },
+    { id: 'cable', title: 'Cable TV', link: '#services' },
+    { id: 'virtual-cards', title: 'Virtual Cards', link: '#services' },
+    { id: 'funds', title: 'Funds Transfer', link: '#services' }
   ];
 
   // Language switch handler
@@ -72,7 +72,7 @@ const Navbar = ({ language, setLanguage }) => {
                 <ChevronDown className="ml-1 w-5 h-5 transition-transform duration-300 group-hover:rotate-180" />
               </button>
               <div 
-                className="absolute left-0 mt-2 w-64 bg-white text-[#08448c] shadow-lg rounded-lg z-10 opacity-0 invisible 
+                className="absolute left-0 mt-2 w-64 bg-white shadow-lg rounded-lg z-50 opacity-0 invisible 
                 group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top"
               >
                 <div className="py-4">
@@ -80,9 +80,10 @@ const Navbar = ({ language, setLanguage }) => {
                     <button
                       key={service.id}
                       onClick={() => scrollToSection(service.id)}
-                      className={`block w-full text-left px-4 py-3 hover:bg-[#025798] hover:text-white transition-colors duration-200
+                      className={`block w-full text-left px-4 py-3 text-[#08448c] hover:bg-[#025798] hover:text-white transition-colors duration-200
                         ${index === 0 ? "rounded-t-lg" : ""} 
-                        ${index === services.length - 1 ? "rounded-b-lg" : ""}`}
+                        ${index === services.length - 1 ? "rounded-b-lg" : ""}
+                        font-medium`}
                     >
                       {service.title}
                     </button>
