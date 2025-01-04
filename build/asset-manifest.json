@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf18b141.css",
+    "main.js": "/static/js/main.76325b43.js",
+    "static/media/evault-app.jpg": "/static/media/evault-app.20ffc09e66183a855706.jpg",
+    "static/media/evault-main-logo.png": "/static/media/evault-main-logo.8aea430236bb526ed1bd.png",
+    "index.html": "/index.html",
+    "main.bf18b141.css.map": "/static/css/main.bf18b141.css.map",
+    "main.76325b43.js.map": "/static/js/main.76325b43.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf18b141.css",
+    "static/js/main.76325b43.js"
+  ]
+}
