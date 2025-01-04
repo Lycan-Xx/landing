@@ -1,5 +1,7 @@
 import React from "react";
 import { FaShieldAlt, FaClock, FaHeadset, FaWallet } from "react-icons/fa";
+import { FaVault } from "react-icons/fa6";
+
 import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
@@ -27,9 +29,9 @@ const Mission = ({ language }) => {
 					description: "Our dedicated support team is available round-the-clock to assist you with any queries or concerns, ensuring a smooth financial experience." 
 				},
 				{ 
-					icon: <FaWallet className="w-8 h-8 text-blue-500" />, 
-					title: "Smart Digital Wallet", 
-					description: "Experience seamless transactions with our intelligent digital wallet. Send, receive, and manage funds with just a few taps." 
+					icon: <FaVault className="w-8 h-8 text-blue-500" />, 
+					title: "Smart Digital Vault", 
+					description: "Securely store and manage your sensitive credentials in our encrypted digital vault. Upload documents, passwords, and important files with confidence, knowing they're protected by advanced security measures."
 				}
 			]
 		},
@@ -55,7 +57,7 @@ const Mission = ({ language }) => {
 					description: "Awọn ẹgbẹ atilẹyin wa wa ni gbogbo akoko lati ran ọ lọwọ pẹlu eyikeyi ibeere tabi aibalẹ, n rii daju iriri owo to dara." 
 				},
 				{ 
-					icon: <FaWallet className="w-8 h-8 text-blue-500" />, 
+					icon: <FaVault className="w-8 h-8 text-blue-500" />, 
 					title: "Apo Dijitali Ọlọgbọn", 
 					description: "Ni iriri awọn iṣowo airokọ pẹlu apo wa dijitali ọlọgbọn. Fi ranṣẹ, gba, ki o si ṣakoso owo pẹlu awọn tẹ diẹ." 
 				}
@@ -83,7 +85,7 @@ const Mission = ({ language }) => {
 					description: "Ƙungiyarmu ta tallafi na nan a kowane lokaci don taimaka muku da duk wata tambaya ko damuwa, yana tabbatar da kyakkyawan ƙwarewa na kuɗi." 
 				},
 				{ 
-					icon: <FaWallet className="w-8 h-8 text-blue-500" />, 
+					icon: <FaVault className="w-8 h-8 text-blue-500" />, 
 					title: "Walat Mai Hankali", 
 					description: "Sami ƙwarewa mai sauƙi tare da walatmu na dijital mai hankali. Aika, karɓa, kuma sarrafa kuɗi da dan taɓawa kaɗan." 
 				}
@@ -110,7 +112,7 @@ const Mission = ({ language }) => {
 					description: "Ndị otu nkwado anyị dị mgbe niile iji nyere gị aka na ajụjụ ọ bụla ma ọ bụ nchegbu, na-ahụ maka ahụmịhe ego dị mma." 
 				},
 				{ 
-					icon: <FaWallet className="w-8 h-8 text-blue-500" />, 
+					icon: <FaVault className="w-8 h-8 text-blue-500" />, 
 					title: "Akpa Dijitalụ Mara Ihe", 
 					description: "Nwee ahụmịhe azụmahịa dị mfe site na akpa anyị dijitalụ mara ihe. Zipu, nata, ma jikwaa ego site na ịpị ole na ole." 
 				}

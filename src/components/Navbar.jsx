@@ -38,6 +38,15 @@ const Navbar = ({ language, setLanguage }) => {
     setLanguage(languages[nextIndex]);
   };
 
+  // Add handler functions for auth links
+  const handleSignIn = () => {
+    window.open('https://app.evault.com.ng/mobile/login/', '_blank');
+  };
+
+  const handleSignUp = () => {
+    window.open('https://app.evault.com.ng/mobile/register/', '_blank');
+  };
+
   return (
     <nav className="bg-white fixed w-full z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -117,10 +126,16 @@ const Navbar = ({ language, setLanguage }) => {
               <Globe className="h-5 w-5 mr-1" />
               {language}
             </button>
-            <button className="flex items-center px-4 py-2 text-[#025798] hover:bg-gray-100 rounded-lg transition-all">
+            <button 
+              onClick={handleSignIn}
+              className="flex items-center px-4 py-2 text-[#025798] hover:bg-gray-100 rounded-lg transition-all"
+            >
               Sign In
             </button>
-            <button className="flex items-center px-4 py-2 bg-[#025798] text-white rounded-lg hover:bg-[#024578] transition-all">
+            <button 
+              onClick={handleSignUp}
+              className="flex items-center px-4 py-2 bg-[#025798] text-white rounded-lg hover:bg-[#024578] transition-all"
+            >
               Sign Up
             </button>
           </div>
@@ -216,12 +231,18 @@ const Navbar = ({ language, setLanguage }) => {
               </button>
 
               {/* Sign In */}
-              <button className="flex items-center px-4 py-2 text-[#025798] hover:bg-gray-100 rounded-lg transition-all w-full text-left">
+              <button 
+                onClick={handleSignIn}
+                className="flex items-center px-4 py-2 text-[#025798] hover:bg-gray-100 rounded-lg transition-all w-full text-left"
+              >
                 Sign In
               </button>
 
               {/* Sign Up */}
-              <button className="flex items-center px-4 py-2 bg-[#025798] text-white rounded-lg hover:bg-[#024578] transition-all w-full text-left">
+              <button 
+                onClick={handleSignUp}
+                className="flex items-center px-4 py-2 bg-[#025798] text-white rounded-lg hover:bg-[#024578] transition-all w-full text-left"
+              >
                 Sign Up
               </button>
             </div>
