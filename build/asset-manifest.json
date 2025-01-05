@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/landing/static/css/main.27b81d9e.css",
-    "main.js": "/landing/static/js/main.5e7aa4b8.js",
+    "main.css": "/landing/static/css/main.044c518c.css",
+    "main.js": "/landing/static/js/main.a27b7182.js",
     "static/media/evault-app.jpg": "/landing/static/media/evault-app.20ffc09e66183a855706.jpg",
     "static/media/hero-page.jpg": "/landing/static/media/hero-page.4b57b64348248b4a0207.jpg",
     "static/media/evault-main-logo.png": "/landing/static/media/evault-main-logo.8aea430236bb526ed1bd.png",
     "index.html": "/landing/index.html",
-    "main.27b81d9e.css.map": "/landing/static/css/main.27b81d9e.css.map",
-    "main.5e7aa4b8.js.map": "/landing/static/js/main.5e7aa4b8.js.map"
+    "main.044c518c.css.map": "/landing/static/css/main.044c518c.css.map",
+    "main.a27b7182.js.map": "/landing/static/js/main.a27b7182.js.map"
   },
   "entrypoints": [
-    "static/css/main.27b81d9e.css",
-    "static/js/main.5e7aa4b8.js"
+    "static/css/main.044c518c.css",
+    "static/js/main.a27b7182.js"
   ]
 }
